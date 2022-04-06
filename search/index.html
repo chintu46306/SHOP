@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://github.com/niklasvh/html2canvas/releases/download/0.4.1/html2canvas.js"></script>
+    <script src="https://cdn.jsdelivr.net/canvas2image/0.1/canvas2image.min.js"></script>
+    
+</head>
+<body>
+    <div id="separador">
+
+        <h2><img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_116x41dp.png" srcset="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_116x41dp.png 2x" width="71"><span>Adwords <i>Simulador</i></span></h2>
+      
+        <form indice="1">
+      
+          <div>
+      
+            <input class="cT1 contador" name="cT1" type="text" value="30" disabled="true" class="contador" />
+      
+            <input class="titulo1Ad" name="titulo1Ad" placeholder="Título 1" type="text" maxlength="30" />
+      
+          </div>
+      
+          <div>
+      
+            <input class="cT2 contador" name="cT2" type="text" value="30" disabled="true" class="contador" />
+      
+            <input class="titulo2Ad" name="titulo2Ad" placeholder="Título 2" type="text" maxlength="30" />
+      
+          </div>
+      
+              <div>
+      
+            <input class="cT3 contador" name="cT3" type="text" value="30" disabled="true" class="contador" />
+      
+            <input class="titulo3Ad" name="titulo3Ad" placeholder="Título 3" type="text" maxlength="30" />
+      
+          </div>
+          
+          <div>
+      
+            <input class="linkSiteAd" name="linkSiteAd" placeholder="site.com.br/atalho1/atalho2/" type="text" />
+      
+          </div>
+      
+          <div>
+            <input class="cD1 contador" name="cD" type="text" value="90" disabled="true" class="contador" />
+      
+            <textarea class="descricaoAd1" maxlength="90" placeholder="Descrição 1" rows="3"></textarea>
+          </div>
+          
+      <div>
+            <input class="cD2 contador" name="cD" type="text" value="90" disabled="true" class="contador" />
+      
+            <textarea class="descricaoAd2" maxlength="90" placeholder="Descrição 2" rows="3"></textarea>
+          </div>
+      
+          <div>
+            <input class="cT contador" name="cD" type="text" value="15" disabled="true" class="contador" />
+      
+            <input type="checkbox" id="telefoneCheck" class="check">
+            <input type="text" class="telefoneAd" maxlength="15" placeholder="Telefone (00) 00000.0000"></textarea>
+          </div>
+      
+          <div>
+            <input type="checkbox" id="caracteristicaCheck" class="check">
+            <textarea class="caracteristicasAd" maxlength="90" placeholder="Característica 1, Característica 2, Característica 3"></textarea>
+          </div>
+      
+          <div>
+            <input type="checkbox" id="linksCheck" class="check">
+            <textarea class="siteLinksAd" maxlength="90" placeholder="Site Link 1, Site Link 2, Site Link 3, Site Link 4"></textarea>
+          </div>
+      
+          <div class="botoesBox">
+            <button class="downloadBtn" type="button" download="mockup.png"><i class="fa fa-download" aria-hidden="true"></i> Download Mockups</button>
+            <button class="resetBtn" type="button"><i class="fa fa-refresh" aria-hidden="true"></i> Reset</button>
+      
+          </div>
+      <a id="test"></a>
+        
+        </form>
+      
+      <a class="btn gDocs" href="https://goo.gl/dGA6xv" target="_blank">
+        Quer criar anúncios do Adwords em uma planilha do Google Drive? <b>Clique aqui.</b></a>
+      <br>
+      <a class="btn PSD" href="https://goo.gl/RC0LhV" target="_blank">
+        Conheça também a versão em PSD. <br /><b>Clique aqui.</b></a>
+      <br>
+      <a class="btn Responsive" href="https://goo.gl/Hjcf6y" target="_blank">
+        Conheça o <b>Simulador GDN Responsivo</b> para campanhas da Rede Display
+      </a>
+      
+      <div class="social">
+      <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fcodepen.io%2Fmilitao%2Ffull%2FbqKMvg%2F&width=229&layout=button_count&action=recommend&size=large&show_faces=true&share=true&height=46&appId=776832442494355" width="250" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        
+      </div>
+      
+      </div>
+      
+      <div class="renderAnuncio" id="anuncio1">
+      
+        <!--Exemplo Desktop-->
+      
+        <h4 class="tituloDesktop">
+        <span><i class="fa fa-desktop" aria-hidden="true"></i></span>
+        Versão Desktop
+      </h4>
+      
+        <div class="desktop">
+      
+          <div class="RenderGoogle"></div>
+      
+          <div class="adBox">
+      
+            <div class="titulo">
+              <a href="#">
+                <span class="titulo1">Título 1</span> | <span class="titulo2">Título 2</span> <span class="titulo3Box">| <span class="titulo3">Título 3</span></span>
+              </a>
+            </div>
+            <div class="caminho">
+              <span class="tag">Anúncio</span>
+              <a href="#" class="link">site.com.br/atalho1/atalho2/</a>
+              <i class="fa fa-sort-desc" aria-hidden="true"></i>
+              <span class="telefone">(00) 00000.0000</span>
+            </div>
+            <div class="descricao"><span class="descricaoR1">Texto descritivo.</span>&nbsp;<span class="descricaoR2"></span></div>
+            <div class="fraseDestaque">Característica 1 · Característica 2</div>
+            <div class="siteLinks">
+              <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+              </ul>
+            </div>
+      
+          </div>
+      
+          <div class="linkSimulator">
+            <b></b>
+            <u></u>
+            <span></span>
+            <i></i>
+          </div>
+      
+        </div>
+      
+        <!--Exemplo mobile-->
+      
+        <h4 class="tituloMobile">
+        <span><i class="fa fa-mobile" aria-hidden="true"></i></span>
+       Versão para dispositivos móveis</h4>
+      
+        <div class="mobileBox">
+          <div class="mobileScreen">
+            <div class="phone"></div>
+            <div class="mobileBg">
+      
+              <!--inicio do anuncio-->
+      
+              <div class="card">
+                <div class="titulo">
+                  <a href="#">
+                    <span class="titulo1">Título 1</span> | <span class="titulo2">Título 2</span> <span class="titulo3Box">| <span class="titulo3">Título 3</span></span>
+                  </a>
+                </div>
+                <div class="caminho">
+                  <span class="tag">Anúncio</span>
+                  <a href="#" class="link">site.com.br/atalho1/atalho2/</a>
+                </div>
+      
+                <div class="divisor"></div>
+      
+                <div class="descricao"><span class="descricaoR1">Texto descritivo.</span>&nbsp;<span class="descricaoR2"></span></div>
+                <div class="fraseDestaque">Característica 1 · Característica 2</div>
+                <div class="siteLinks_mobile">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                </div>
+                <div class="divisor divisorTL"></div>
+                <div class="telefoneLine">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span class="telefone">Ligar para (00) 00000.0000</span>
+                </div>
+              </div>
+      
+              <!--fim do anuncio-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+        ga('create', 'UA-51705414-2', 'auto');
+        ga('send', 'pageview');
+      
+      </script>
+</body>
+</html>
